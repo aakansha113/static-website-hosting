@@ -22,7 +22,6 @@ The website is publicly accessible through an S3 website endpoint.
 ```bash
 aws-static-website/
 ├── index.html
-├── error.html
 └── README.md
 ```
 
