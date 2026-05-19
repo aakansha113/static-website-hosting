@@ -34,7 +34,9 @@ aws-static-website/
 6. Accessed live website URL
 
 ## Website Output
-Hello from AWS S3 Static Website!
+<p align="center">
+  <img src="src/manual.png" width="700"/>
+</p>
 
 ## Learning Outcome
 Through this project, I learned:
