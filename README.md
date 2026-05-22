@@ -106,6 +106,7 @@ terraform output
 <p align="center">
   <img src="src/terraform-output.png" width="700"/>
 </p>
+
 ---
 
 ## Learning Outcome
@@ -119,8 +120,6 @@ Through this project, I learned:
 ---
 
 ## Future Improvements
-- CloudFront integration
-- Custom domain with Route 53
 - CI/CD pipeline using GitHub Actions
 
 ---
