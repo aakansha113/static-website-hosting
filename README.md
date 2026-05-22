@@ -100,7 +100,7 @@ terraform output
 ## Website Output
 
 <p align="center">
-  <img src="src/terraform-output.png" width="700"/>
+  <img src="src/manual.png" width="700"/>
 </p>
 
 ---
