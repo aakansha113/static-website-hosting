@@ -3,5 +3,5 @@ variable "aws_region" {
 }
 
 variable "bucket_name" {
-  default = "static-website-21-05"
+  default = "static-website-22-05"
 }
