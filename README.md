@@ -103,6 +103,9 @@ terraform output
   <img src="src/manual.png" width="700"/>
 </p>
 
+<p align="center">
+  <img src="src/terraform-output.png" width="700"/>
+</p>
 ---
 
 ## Learning Outcome
