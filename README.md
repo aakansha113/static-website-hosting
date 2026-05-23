@@ -156,7 +156,7 @@ Application UI
 
 🎥 Demo Video:
 
-https://github.com/aakansha113/static-website-hosting/raw/main/src/demo.mp4
+https://github.com/aakansha113/static-website-hosting/raw/main/src/s3-cicd1.mp4
 
 <p align="center">
   <img src="src/manual.png" width="800"/>
