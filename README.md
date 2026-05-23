@@ -165,9 +165,12 @@ terraform destroy
 ## GitHub Actions Workflow Output
 
 <p align="center">
-  <img src="src/github-actions.png" width="900"/>
+  <img src="src/github-workflow1.png" width="900"/>
 </p>
 
+<p align="center">
+  <img src="src/github-flow-1.png" width="900"/>
+</p>
 ---
 
 ## Learning Outcome
