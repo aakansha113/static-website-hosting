@@ -82,6 +82,12 @@ aws-static-website-project/
 ```
 
 ---
+## Architecture
+
+<p align="center">
+  <img src="src/architecture.png" width="800"/>
+</p>
+---
 
 ## Terraform Files
 
