@@ -40,7 +40,6 @@ resource "aws_s3_bucket_policy" "bucket_policy" {
   })
 }
 
-
 resource "aws_s3_object" "index" {
   bucket       = aws_s3_bucket.website.id
   key          = "index.html"
