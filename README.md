@@ -1,41 +1,71 @@
-# AWS Static Website Hosting using Terraform
+# AWS Static Website CI/CD Pipeline using Terraform & GitHub Actions
 
-Automated static website deployment on AWS using Terraform and Amazon S3.
+Automated static website deployment on AWS using Terraform, GitHub Actions, and Amazon S3.
+
+---
 
 ## Project Overview
-This project demonstrates how to deploy a static website on AWS using Infrastructure as Code (IaC) with Terraform.
 
-Terraform automatically provisions:
-- S3 bucket
-- Static website hosting
-- Bucket policy
-- Website file uploads
+This project demonstrates how to deploy and automate a static website on AWS using Infrastructure as Code (IaC) and CI/CD practices.
 
-The website is publicly accessible through an S3 website endpoint.
+The project was completed in 3 phases:
+
+### Part 1 — Manual AWS S3 Static Website Hosting
+- Created S3 bucket manually
+- Enabled static website hosting
+- Configured public bucket policy
+- Hosted website on AWS
+
+### Part 2 — Terraform Automation
+- Automated infrastructure using Terraform
+- Created reusable Terraform configuration files
+- Automated website deployment
+
+### Part 3 — CI/CD using GitHub Actions
+- Integrated GitHub Actions workflow
+- Automated Terraform deployment pipeline
+- Triggered deployments on Git push
 
 ---
 
 ## Technologies Used
+
 - Terraform
+- GitHub Actions
 - AWS S3
+- AWS IAM
 - AWS CLI
 - Infrastructure as Code (IaC)
+- CI/CD Pipeline
 
 ---
 
 ## Features
+
 - Automated AWS infrastructure deployment
 - S3 static website hosting
-- Public access bucket policy
-- Website endpoint output
-- HTML file upload automation
+- GitHub Actions CI/CD pipeline
+- Public bucket policy configuration
+- Website file upload automation
+- Terraform workflow automation
+
+---
+
+## CI/CD Workflow
+
+```text
+Git Push → GitHub Actions → Terraform → AWS S3
+```
 
 ---
 
 ## Project Structure
 
 ```bash
-terraform-aws-static-website/
+aws-static-website-project/
+├── .github/
+│   └── workflows/
+│       └── deploy.yml
 ├── index.html
 ├── error.html
 ├── provider.tf
@@ -44,7 +74,11 @@ terraform-aws-static-website/
 ├── outputs.tf
 ├── terraform.tfvars
 ├── .gitignore
-└── README.md
+├── README.md
+└── src/
+    ├── manual.png
+    ├── terraform-output.png
+    └── github-actions.png
 ```
 
 ---
@@ -62,7 +96,7 @@ Creates:
 - Website objects
 
 ### variables.tf
-Stores reusable variables like:
+Stores reusable variables:
 - AWS region
 - Bucket name
 
@@ -74,6 +108,21 @@ Stores variable values.
 
 ---
 
+## GitHub Actions Workflow
+
+The workflow automatically runs on every push to the `main` branch.
+
+### Workflow Steps
+- Checkout Repository
+- Setup Terraform
+- Configure AWS Credentials
+- Terraform Init
+- Terraform Validate
+- Terraform Plan
+- Terraform Apply
+
+---
+
 ## Terraform Commands Used
 
 ```bash
@@ -82,47 +131,69 @@ terraform validate
 terraform plan
 terraform apply
 terraform output
+terraform destroy
 ```
 
 ---
 
 ## Deployment Steps
+
 1. Configured AWS CLI
 2. Created Terraform configuration files
 3. Initialized Terraform
-4. Validated configuration
-5. Previewed infrastructure using plan
-6. Applied infrastructure changes
-7. Accessed live S3 static website
+4. Validated Terraform configuration
+5. Applied infrastructure changes
+6. Created GitHub Actions workflow
+7. Added AWS IAM credentials as GitHub Secrets
+8. Triggered automatic deployment using Git push
+9. Destroyed infrastructure after testing
 
 ---
 
 ## Website Output
 
 <p align="center">
-  <img src="src/manual.png" width="700"/>
+  <img src="src/manual.png" width="800"/>
 </p>
 
 <p align="center">
-  <img src="src/terraform-output.png" width="700"/>
+  <img src="src/terraform-output.png" width="800"/>
+</p>
+
+---
+
+## GitHub Actions Workflow Output
+
+<p align="center">
+  <img src="src/github-actions.png" width="900"/>
 </p>
 
 ---
 
 ## Learning Outcome
+
 Through this project, I learned:
 - Infrastructure as Code (IaC)
 - Terraform workflow
-- AWS resource automation
-- S3 static website deployment
+- AWS S3 automation
+- GitHub Actions workflows
+- CI/CD pipeline implementation
+- AWS IAM credential management
+- Automated cloud deployment
 - Terraform state management
 
 ---
 
 ## Future Improvements
-- CI/CD pipeline using GitHub Actions
+
+- CloudFront integration
+- HTTPS support
+- Custom domain with Route 53
+- Remote Terraform backend using S3
+- Terraform state locking with DynamoDB
 
 ---
 
 ## Author
+
 Aakansha Hujare
