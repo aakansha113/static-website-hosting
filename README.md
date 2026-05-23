@@ -170,7 +170,7 @@ terraform destroy
 
 
 <p align="center">
-  <img src="src/github-flow-2.png" width="900"/>
+  <img src="src/githhub-flow-2.png" width="900"/>
 </p>
 
 ---
