@@ -192,7 +192,12 @@ Through this project, I learned:
 - AWS IAM credential management
 - Automated cloud deployment
 - Terraform state management
+  
+---
 
+<p align="center">
+  <img src="src/learning-outcome.png" width="800"/>
+</p>
 ---
 
 ## Future Improvements
