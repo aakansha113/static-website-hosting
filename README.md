@@ -151,7 +151,9 @@ terraform destroy
 ---
 
 ## Website Output
+
 Application UI
+
 🎥 Demo Video
 https://github.com/aakansha113/static-website-hosting/raw/main/src/demo.mp4
 
