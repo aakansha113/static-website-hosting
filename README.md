@@ -154,7 +154,8 @@ terraform destroy
 
 Application UI
 
-🎥 Demo Video
+🎥 Demo Video:
+
 https://github.com/aakansha113/static-website-hosting/raw/main/src/demo.mp4
 
 <p align="center">
