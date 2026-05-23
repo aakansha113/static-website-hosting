@@ -87,6 +87,7 @@ aws-static-website-project/
 <p align="center">
   <img src="src/architecture.png" width="800"/>
 </p>
+
 ---
 
 ## Terraform Files
@@ -204,6 +205,7 @@ Through this project, I learned:
 <p align="center">
   <img src="src/learning-outcome.png" width="800"/>
 </p>
+
 ---
 
 ## Future Improvements
